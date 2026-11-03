@@ -1,0 +1,16 @@
+8x H100 SXM, $2.15/GPU-hr, 6 mo min, InfiniBand, avail Dec 1
+Can do 64 H100s @ 17.20/node/hr, NVLink, month-to-month, Texas DC
+A100 80GB x16, 1.10 per gpu hour, 1yr commit, ready now
+H200 cluster, 256 GPUs, $3.60/hr per GPU, 12-month term, 3.2T InfiniBand, available Jan 15
+single H100 PCIe on-demand $2.49/hr, no commitment
+32x H100 SXM, $33.60 per node hour, 3 month min, live in 2 weeks
+B200 8-GPU node, $64/hr, 1yr reserved, IB, Q1 delivery
+A100 40GB x8 at $0.95/GPU-hr, spot, can be interrupted
+H100 x128 at $0.89/gpu-hr, 2yr commit, avail now
+H100 SXM x8, $9.80/GPU hour on-demand, Virginia
+16 nodes of 8xH200, $41.60/node-hr, 6mo, Finland
+A100 80GB 64 GPUs $1.65 per GPU per hour, month-to-month, InfiniBand
+H100 SXM5 8x, 2.40 an hour per card, 1 yr, available immediately
+Offer: 512 x H100, $2.05/GPU-hr, 18 months, InfiniBand, mid-Feb start
+H200 x8 on-demand $4.95 per GPU hr
+B200 x 64, 7.40/hr/GPU, 6-mo term, available March

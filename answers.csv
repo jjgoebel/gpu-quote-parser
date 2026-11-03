@@ -1,0 +1,17 @@
+line,gpu_model,gpu_count,price_per_gpu_hr,term
+1,H100,8,2.15,6 months
+2,H100,64,2.15,month-to-month
+3,A100,16,1.10,12 months
+4,H200,256,3.60,12 months
+5,H100,1,2.49,on-demand
+6,H100,32,4.20,3 months
+7,B200,8,8.00,12 months
+8,A100,8,0.95,spot
+9,H100,128,0.89,24 months
+10,H100,8,9.80,on-demand
+11,H200,128,5.20,6 months
+12,A100,64,1.65,month-to-month
+13,H100,8,2.40,12 months
+14,H100,512,2.05,18 months
+15,H200,8,4.95,on-demand
+16,B200,64,7.40,6 months
