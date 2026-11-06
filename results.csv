@@ -1,0 +1,17 @@
+line,gpu_model,gpu_count,price_per_gpu_hr,term,interconnect,availability,location,model_median,pct_from_median,flag,offer
+1,H100,8,2.15,6 months,InfiniBand,Dec 1,,2.275,-5.4945054945054945,,"8x H100 SXM, $2.15/GPU-hr, 6 mo min, InfiniBand, avail Dec 1"
+2,H100,64,2.15,month-to-month,NVLink,,Texas DC,2.275,-5.4945054945054945,,"Can do 64 H100s @ 17.20/node/hr, NVLink, month-to-month, Texas DC"
+3,A100,16,1.1,12 months,,ready now,,1.1,0.0,,"A100 80GB x16, 1.10 per gpu hour, 1yr commit, ready now"
+4,H200,256,3.6,12 months,3.2T InfiniBand,Jan 15,,4.95,-27.272727272727277,LOW,"H200 cluster, 256 GPUs, $3.60/hr per GPU, 12-month term, 3.2T InfiniBand, available Jan 15"
+5,H100,1,2.49,on-demand,,,,2.275,9.450549450549465,,"single H100 PCIe on-demand $2.49/hr, no commitment"
+6,H100,32,4.2,3 months,,live in 2 weeks,,2.275,84.61538461538463,HIGH,"32x H100 SXM, $33.60 per node hour, 3 month min, live in 2 weeks"
+7,B200,8,8.0,12 months,IB,Q1 delivery,,7.7,3.896103896103894,,"B200 8-GPU node, $64/hr, 1yr reserved, IB, Q1 delivery"
+8,A100,8,0.95,spot,,,,1.1,-13.636363636363647,,"A100 40GB x8 at $0.95/GPU-hr, spot, can be interrupted"
+9,H100,128,0.89,24 months,,now,,2.275,-60.879120879120876,LOW,"H100 x128 at $0.89/gpu-hr, 2yr commit, avail now"
+10,H100,8,9.8,on-demand,,,Virginia,2.275,330.7692307692308,HIGH,"H100 SXM x8, $9.80/GPU hour on-demand, Virginia"
+11,H200,128,5.2,6 months,,,Finland,4.95,5.05050505050505,,"16 nodes of 8xH200, $41.60/node-hr, 6mo, Finland"
+12,A100,64,1.65,month-to-month,InfiniBand,,,1.1,49.99999999999998,HIGH,"A100 80GB 64 GPUs $1.65 per GPU per hour, month-to-month, InfiniBand"
+13,H100,8,2.4,12 months,,immediately,,2.275,5.4945054945054945,,"H100 SXM5 8x, 2.40 an hour per card, 1 yr, available immediately"
+14,H100,512,2.05,18 months,InfiniBand,mid-Feb start,,2.275,-9.890109890109894,,"Offer: 512 x H100, $2.05/GPU-hr, 18 months, InfiniBand, mid-Feb start"
+15,H200,8,4.95,on-demand,,,,4.95,0.0,,H200 x8 on-demand $4.95 per GPU hr
+16,B200,64,7.4,6 months,,March,,7.7,-3.896103896103894,,"B200 x 64, 7.40/hr/GPU, 6-mo term, available March"

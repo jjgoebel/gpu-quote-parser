@@ -1,0 +1,5 @@
+Hi team, we have four 8-way H200 boxes free next month in Frankfurt, asking $38.40 per box per hour on a six-month contract.
+H100 PCIe, 24 cards, $1,752/GPU/month (730 hrs), 3-month contract, Ohio
+model=B200;qty=4 nodes;gpus_per_node=4;rate=$30.00/node/hr;term=12mo;loc=Oregon
+H100 96x 1.95 offered per gpu, 9m, IAD
+Whole 128-GPU H200 pod for $512/hr all-in, 1-year reserved
