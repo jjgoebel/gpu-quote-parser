@@ -107,6 +107,9 @@ uv run python parser.py heldout_quotes.txt heldout_answers.csv heldout_results.c
 - **The flag is weak with few offers:** with two offers, as for B200, both sit the same distance from the median, so either both are flagged or neither is. The median also includes the offer being tested.
 - **The 8-GPU default is an assumption:** a per-node price on a differently sized node would be wrong if the offer doesn't state the size.
 - **Only two price units are supported:** per-month and whole-cluster prices come out blank (see the held-out result).
+- **Fixed GPU list:** the schema only allows A100, H100, H200 and B200, so newer or AMD GPUs (B300, MI300X) can't be labeled correctly.
+- **Assumes USD:** prices in other currencies would be read as dollars without a warning.
+- **Ignores what's included:** some offers are all-in and others exclude storage, networking or support, so equal $/GPU-hour prices aren't always equal deals.
 
 ## Next steps
 
@@ -115,3 +118,4 @@ uv run python parser.py heldout_quotes.txt heldout_answers.csv heldout_results.c
 - Compare each offer against others with a similar term, not just the same GPU model.
 - Parse GPU variants (memory size, SXM or PCIe) and compare within them.
 - Send offers the model can't read confidently, or with missing prices, to a person for review.
+- Add a currency field and an "unknown model" option, so unfamiliar offers get flagged for review instead of mislabeled.
