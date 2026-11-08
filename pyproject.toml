@@ -1,7 +1,7 @@
 [project]
 name = "gpu-quote-parser"
 version = "0.1.0"
-description = "Add your description here"
+description = "Parses free-text GPU rental quotes into normalized $/GPU-hour, scores parse accuracy, and flags price outliers."
 readme = "README.md"
 authors = [
     { name = "John Goebel", email = "jjgoebel29@gmail.com" }
@@ -11,10 +11,3 @@ dependencies = [
     "anthropic>=2.4.0",
     "pydantic>=2.14.2",
 ]
-
-[project.scripts]
-gpu-quote-parser = "gpu_quote_parser:main"
-
-[build-system]
-requires = ["uv_build>=0.12.22,<0.13.0"]
-build-backend = "uv_build"
