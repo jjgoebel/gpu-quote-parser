@@ -1,8 +1,5 @@
 # GPU Quote Parser
 
-## Purpose
-A small portfolio project for an application to Stoa's Compute Markets desk (an AI compute/GPU trading desk). It turns messy, free-text GPU rental offers into a clean comparable table, flags unusual prices, and measures how accurately the LLM parsed them. I need to understand and explain every part of this code in an interview, so explain your plan before writing code and keep things simple.
-
 ## Setup
 - Python 3.14, managed with uv. Run code with `uv run python parser.py`. Add packages with `uv add`.
 - Anthropic API key is in the `ANTHROPIC_API_KEY` environment variable. Never write the key into any file.
