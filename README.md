@@ -1,6 +1,6 @@
 # GPU Quote Parser
 
-GPU rental offers arrive as messy free text: one quotes per GPU-hour, another per node-hour, and terms are written a dozen ways. This tool turns those offers into a clean table priced in $/GPU-hour, flags unusual prices, and measures how accurately the LLM read them.
+GPU rental offers arrive as messy free text: one quotes per GPU-hour, another per node-hour, and terms are written a dozen ways. This tool turns those offers into a clean table priced in $/GPU-hour, flags unusual prices, and measures how accurately the LLM reads them.
 
 ## How it works
 
