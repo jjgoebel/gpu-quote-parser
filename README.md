@@ -2,6 +2,8 @@
 
 GPU rental offers arrive as messy free text: one quotes per GPU-hour, another per node-hour, and terms are written a dozen ways. This tool turns those offers into a clean table priced in $/GPU-hour, flags unusual prices, and measures how accurately the LLM reads them.
 
+Built with Claude Code. Project spec is in CLAUDE.md
+
 ## How it works
 
 `parser.py` runs five steps:
@@ -68,13 +70,13 @@ Saved 16 rows to results.csv
 | First run, before any fixes | 16/16 | 15/16 | 16/16 | 16/16 | 63/64 |
 | After the fix (same result on 3 runs) | 16/16 | 16/16 | 16/16 | 16/16 | 64/64 |
 
-**The one miss:** line 7 says `B200 8-GPU node`. The model correctly read 8 GPUs per node and left the node count blank, but `normalize` had no rule for a quote with neither a node count nor a GPU count. I added one general rule in Python: treat that as a single node. The prompt did not change.
+**The one miss:** line 7 says `B200 8-GPU node`. The model correctly read 8 GPUs per node and left the node count blank, but `normalize` had no rule for a quote with neither a node count nor a GPU count. The fix was one general rule in Python: treat that as a single node. The prompt did not change.
 
 **How to read the 64/64:** the fix was made after seeing a miss on these same 16 lines, so the final score is not an independent test. The held-out result below is the better guide to how it handles new formats.
 
 ## Held-out result
 
-I wrote 5 new offers in formats `quotes.txt` doesn't contain, with their answers fixed before any run: a broker email, a monthly price, key=value fields, trader shorthand and a whole-cluster price. They ran with the prompt unchanged, and nothing was fixed afterwards.
+The held-out set is 5 new offers in formats `quotes.txt` doesn't contain, with their answers fixed before any run: a broker email, a monthly price, key=value fields, trader shorthand and a whole-cluster price. They ran with the prompt unchanged, and nothing was fixed afterwards.
 
 | GPU model | GPU count | Price | Term | Total fields | Offers fully correct |
 |---|---|---|---|---|---|
@@ -91,7 +93,7 @@ The score was the same on all 3 runs.
 
 All four misses are gaps in the code or schema rather than misreads: the model extracted the right number or phrase each time. The two price misses came out blank, not wrong, so no offer got a bad price. They would still need a person to resolve them.
 
-**How to read the 16/20:** this is 5 synthetic offers that I wrote knowing how the parser works, and they use deliberately new formats. It shows where the parser breaks, but it is not a general accuracy estimate.
+**How to read the 16/20:** These are 5 synthetic offers written with knowledge of how the parser works, and they use deliberately new formats. It shows where the parser breaks, but it is not a general accuracy estimate.
 
 To reproduce it:
 
